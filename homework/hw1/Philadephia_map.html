@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a40357d808d36be91cf12e69182321c2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a40357d808d36be91cf12e69182321c2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a40357d808d36be91cf12e69182321c2 = L.map(
+                "map_a40357d808d36be91cf12e69182321c2",
+                {
+                    center: [42.3643, -71.005203],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd05d92b8fa8972c3fa094f11b4b2caf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fd05d92b8fa8972c3fa094f11b4b2caf.addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var marker_8aaa01e8b98110ab33c3872867215b95 = L.marker(
+                [42.3643, -71.005203],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_266e43473ce0bf792e7ceb58c0376c45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "city", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8aaa01e8b98110ab33c3872867215b95.setIcon(icon_266e43473ce0bf792e7ceb58c0376c45);
+        
+    
+        var popup_8e2a4aae777780c0c30c628c6c278fde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87a64928cd8393c66dbe5d8bf46f4389 = $(`<div id="html_87a64928cd8393c66dbe5d8bf46f4389" style="width: 100.0%; height: 100.0%;">Philadephia International Airport</div>`)[0];
+                popup_8e2a4aae777780c0c30c628c6c278fde.setContent(html_87a64928cd8393c66dbe5d8bf46f4389);
+            
+        
+
+        marker_8aaa01e8b98110ab33c3872867215b95.bindPopup(popup_8e2a4aae777780c0c30c628c6c278fde)
+        ;
+
+        
+    
+    
+            var marker_9713be0747a2df8128a0cb8dd5bb42a4 = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_781c8cc77b8f2ce06b104477df63f6dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9713be0747a2df8128a0cb8dd5bb42a4.setIcon(icon_781c8cc77b8f2ce06b104477df63f6dd);
+        
+    
+        var popup_f979ca71160472e39be26162751022cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b63bb7d6159e322765217a3f909fa38 = $(`<div id="html_0b63bb7d6159e322765217a3f909fa38" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_f979ca71160472e39be26162751022cd.setContent(html_0b63bb7d6159e322765217a3f909fa38);
+            
+        
+
+        marker_9713be0747a2df8128a0cb8dd5bb42a4.bindPopup(popup_f979ca71160472e39be26162751022cd)
+        ;
+
+        
+    
+    
+            var marker_2d2c609fcf1d47419175676e218fba6e = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_7ee225892100d707d9a9e127354b53f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d2c609fcf1d47419175676e218fba6e.setIcon(icon_7ee225892100d707d9a9e127354b53f6);
+        
+    
+        var popup_186e1149c351110a08edeb29871534c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e13fce6124f9301952dd0cbd4f9005e2 = $(`<div id="html_e13fce6124f9301952dd0cbd4f9005e2" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_186e1149c351110a08edeb29871534c6.setContent(html_e13fce6124f9301952dd0cbd4f9005e2);
+            
+        
+
+        marker_2d2c609fcf1d47419175676e218fba6e.bindPopup(popup_186e1149c351110a08edeb29871534c6)
+        ;
+
+        
+    
+    
+            var marker_c719d367d4180f2308c0a4cf04d73f81 = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_5d7f3a7489ad3893113af1df01d696db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c719d367d4180f2308c0a4cf04d73f81.setIcon(icon_5d7f3a7489ad3893113af1df01d696db);
+        
+    
+        var popup_0767c811fd97eb7ea57cafa2662557db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6347dafcfccbe69eabff95454d2cd5c = $(`<div id="html_f6347dafcfccbe69eabff95454d2cd5c" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_0767c811fd97eb7ea57cafa2662557db.setContent(html_f6347dafcfccbe69eabff95454d2cd5c);
+            
+        
+
+        marker_c719d367d4180f2308c0a4cf04d73f81.bindPopup(popup_0767c811fd97eb7ea57cafa2662557db)
+        ;
+
+        
+    
+    
+            var marker_c93df0710fde5e605430209906070579 = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_b90d7c71c332e74efe14e19c2f35716f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c93df0710fde5e605430209906070579.setIcon(icon_b90d7c71c332e74efe14e19c2f35716f);
+        
+    
+        var popup_2c52f773bf4ffd173f4f10bdcfe7b95c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b191e2747d5e838e81673a1c4d7790 = $(`<div id="html_f8b191e2747d5e838e81673a1c4d7790" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_2c52f773bf4ffd173f4f10bdcfe7b95c.setContent(html_f8b191e2747d5e838e81673a1c4d7790);
+            
+        
+
+        marker_c93df0710fde5e605430209906070579.bindPopup(popup_2c52f773bf4ffd173f4f10bdcfe7b95c)
+        ;
+
+        
+    
+    
+            var marker_a62d5533b861d7df2ccb3bb00dc6a8cc = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_a6cfaf441a030c46eb7aa05f645e9cfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a62d5533b861d7df2ccb3bb00dc6a8cc.setIcon(icon_a6cfaf441a030c46eb7aa05f645e9cfc);
+        
+    
+        var popup_599fffc98b2fafaade1dccc626464fbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf2e5841301f072d2db6097fac4c64dc = $(`<div id="html_bf2e5841301f072d2db6097fac4c64dc" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_599fffc98b2fafaade1dccc626464fbd.setContent(html_bf2e5841301f072d2db6097fac4c64dc);
+            
+        
+
+        marker_a62d5533b861d7df2ccb3bb00dc6a8cc.bindPopup(popup_599fffc98b2fafaade1dccc626464fbd)
+        ;
+
+        
+    
+    
+            var marker_814c1371486ce62070b998e4e80f2b63 = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_59b006f6089a0d12996cf391a9e6306a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_814c1371486ce62070b998e4e80f2b63.setIcon(icon_59b006f6089a0d12996cf391a9e6306a);
+        
+    
+        var popup_9c5494e1c9872c715063f20c32c11bb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a2a8e4e1a711d5182f9e9afcb592bb5 = $(`<div id="html_8a2a8e4e1a711d5182f9e9afcb592bb5" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_9c5494e1c9872c715063f20c32c11bb7.setContent(html_8a2a8e4e1a711d5182f9e9afcb592bb5);
+            
+        
+
+        marker_814c1371486ce62070b998e4e80f2b63.bindPopup(popup_9c5494e1c9872c715063f20c32c11bb7)
+        ;
+
+        
+    
+    
+            var marker_ba991fdbb9db677861cc8f3eb74987a1 = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_2f03253f0ffa48d483545a959cb7dc31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba991fdbb9db677861cc8f3eb74987a1.setIcon(icon_2f03253f0ffa48d483545a959cb7dc31);
+        
+    
+        var popup_9f0e08fdf0757adc480451ac653342ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40fdb464b9d808071d604f817b25e0a7 = $(`<div id="html_40fdb464b9d808071d604f817b25e0a7" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_9f0e08fdf0757adc480451ac653342ab.setContent(html_40fdb464b9d808071d604f817b25e0a7);
+            
+        
+
+        marker_ba991fdbb9db677861cc8f3eb74987a1.bindPopup(popup_9f0e08fdf0757adc480451ac653342ab)
+        ;
+
+        
+    
+    
+            var marker_1c7d39abc6315835563f682586fe7fb7 = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_a66d80cb366670218b97b6a2fdc16e30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c7d39abc6315835563f682586fe7fb7.setIcon(icon_a66d80cb366670218b97b6a2fdc16e30);
+        
+    
+        var popup_c8b6a087a0829c0d20674c80a829a06c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75da449fe592079d4f2b8d02feb2fe97 = $(`<div id="html_75da449fe592079d4f2b8d02feb2fe97" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_c8b6a087a0829c0d20674c80a829a06c.setContent(html_75da449fe592079d4f2b8d02feb2fe97);
+            
+        
+
+        marker_1c7d39abc6315835563f682586fe7fb7.bindPopup(popup_c8b6a087a0829c0d20674c80a829a06c)
+        ;
+
+        
+    
+    
+            var marker_d3aa52684288aa41c6427ed4bed48cb7 = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_988b28e2254f2fc9e5158186976323bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d3aa52684288aa41c6427ed4bed48cb7.setIcon(icon_988b28e2254f2fc9e5158186976323bc);
+        
+    
+        var popup_886a9e9bc78f3e7d4649e6e947a0b46f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_522006920d9a97ad304002da3f0f5d1d = $(`<div id="html_522006920d9a97ad304002da3f0f5d1d" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_886a9e9bc78f3e7d4649e6e947a0b46f.setContent(html_522006920d9a97ad304002da3f0f5d1d);
+            
+        
+
+        marker_d3aa52684288aa41c6427ed4bed48cb7.bindPopup(popup_886a9e9bc78f3e7d4649e6e947a0b46f)
+        ;
+
+        
+    
+    
+            var marker_1ca756e6625d816bb77ca6685fad924f = L.marker(
+                [39.922516, -75.186783],
+                {}
+            ).addTo(map_a40357d808d36be91cf12e69182321c2);
+        
+    
+            var icon_1bc8e2db1c0bda3ced73ef3185fab049 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "asterisk", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ca756e6625d816bb77ca6685fad924f.setIcon(icon_1bc8e2db1c0bda3ced73ef3185fab049);
+        
+    
+        var popup_0bbc06a211f1de3e5d5a2dcb780bae35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35be385c5a7b81a6de9bdaa184af6120 = $(`<div id="html_35be385c5a7b81a6de9bdaa184af6120" style="width: 100.0%; height: 100.0%;">RIT (Government)</div>`)[0];
+                popup_0bbc06a211f1de3e5d5a2dcb780bae35.setContent(html_35be385c5a7b81a6de9bdaa184af6120);
+            
+        
+
+        marker_1ca756e6625d816bb77ca6685fad924f.bindPopup(popup_0bbc06a211f1de3e5d5a2dcb780bae35)
+        ;
+
+        
+    
+</script>
+</html>
